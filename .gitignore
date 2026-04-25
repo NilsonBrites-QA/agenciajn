@@ -30,8 +30,12 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env files — nunca commitar segredos
 .env*
+!.env.example
+
+# banco SQLite local (Cloudflare D1 emulação)
+.dev/
 
 # vercel
 .vercel

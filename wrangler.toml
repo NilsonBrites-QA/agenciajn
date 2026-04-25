@@ -1,0 +1,20 @@
+name = "agencia-jn"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".vercel/output/static"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "agencia-jn-db"
+database_id = "0f170a8b-8411-4448-ac1a-a966cc70a2cb"
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "agencia-jn-media"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "643beb7251384dd18f2457f9b41ab93d"
+
+[triggers]
+crons = ["0 6,9,12,15,18,21 * * *"]

@@ -1,26 +1,83 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-feature-settings: "ss01", "cv11";
+  --radius-sm: 0.75rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --shadow-soft: 0 12px 30px -18px rgba(18, 24, 40, 0.24);
+  --shadow-elevated: 0 28px 46px -30px rgba(18, 24, 40, 0.3);
+  --color-brand: #1a73e8;
+  --color-brand-strong: #1558b0;
+  --color-bg: #f7f5ef;
+  --color-bg-alt: #efeee8;
+  --color-surface: #fcfbf8;
+  --color-surface-strong: #f2efe8;
+  --color-border: #d9d4ca;
+  --color-ink: #171918;
+  --color-ink-muted: #5a5f5c;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-geist);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root[data-theme="dark"] {
+  --color-brand: #6ea8fe;
+  --color-brand-strong: #8bb8ff;
+  --color-bg: #0d1014;
+  --color-bg-alt: #141920;
+  --color-surface: #161c23;
+  --color-surface-strong: #1f2530;
+  --color-border: #2f3949;
+  --color-ink: #f3f6fb;
+  --color-ink-muted: #9ba5b5;
+  --shadow-soft: 0 12px 30px -18px rgba(2, 6, 23, 0.66);
+  --shadow-elevated: 0 24px 46px -20px rgba(2, 6, 23, 0.75);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at 15% -10%, rgba(26, 115, 232, 0.12), transparent 42%),
+    radial-gradient(circle at 90% 10%, rgba(22, 95, 191, 0.1), transparent 38%),
+    var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-inter), sans-serif;
+  font-feature-settings: var(--font-feature-settings);
+}
+
+a,
+button {
+  transition: all 0.2s ease;
+}
+
+::selection {
+  background: rgba(26, 115, 232, 0.2);
+}
+
+.surface-card {
+  background: linear-gradient(170deg, var(--color-surface), var(--color-surface-strong));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.container-shell {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-shell {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-shell {
+    padding-inline: 2rem;
+  }
 }
