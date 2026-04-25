@@ -7,6 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+    "pages:build": "opennextjs-cloudflare build",
+    "preview": "opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && wrangler pages deploy"
   },
   "dependencies": {
     "drizzle-orm": "^0.45.2",
@@ -20,6 +23,7 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260425.1",
+    "@opennextjs/cloudflare": "^1.19.4",
     "@playwright/test": "^1.59.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
@@ -29,6 +33,7 @@
     "eslint": "^9",
     "eslint-config-next": "^15.5.15",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.85.0"
   }
 }
