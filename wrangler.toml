@@ -1,4 +1,4 @@
-name = "agencia-jn"
+name = "agenciajn"
 compatibility_date = "2024-12-01"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".open-next/assets"
@@ -15,6 +15,3 @@ bucket_name = "agencia-jn-media"
 [[kv_namespaces]]
 binding = "KV"
 id = "643beb7251384dd18f2457f9b41ab93d"
-
-[triggers]
-crons = ["0 6,9,12,15,18,21 * * *"]
