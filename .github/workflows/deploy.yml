@@ -33,10 +33,7 @@ jobs:
           NODE_ENV: production
 
       - name: Deploy to Cloudflare Pages
-        run: |
-          mv wrangler.toml wrangler.workers.toml
-          cd .open-next
-          npx wrangler pages deploy assets --project-name=agenciajn --branch=${{ github.ref_name }}
+        run: npx wrangler pages deploy
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
