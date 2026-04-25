@@ -1,21 +1,192 @@
 @import "tailwindcss";
 
+/* ===================================================
+   DESIGN SYSTEM — Agência JN
+   Light mode como primário. Dark mode como variação.
+   Material Design 3 reinterpretado de forma premium.
+   =================================================== */
+
+:root {
+  --font-feature-settings: "ss01", "cv11";
+
+  /* Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+
+  /* Sombras — sutis, Material 3 inspired */
+  --shadow-xs:  0 1px 2px rgba(26, 75, 140, 0.04), 0 1px 3px rgba(0,0,0,0.05);
+  --shadow-sm:  0 2px 8px rgba(26, 75, 140, 0.06), 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md:  0 4px 20px rgba(26, 75, 140, 0.08), 0 2px 6px rgba(0,0,0,0.06);
+  --shadow-lg:  0 8px 32px rgba(26, 75, 140, 0.1),  0 2px 8px rgba(0,0,0,0.07);
+
+  /* === LIGHT MODE (padrão) === */
+  /* Cor principal — azul profundo, sofisticado */
+  --color-brand:        #1A4B8C;
+  --color-brand-strong: #153C72;
+  --color-brand-subtle: rgba(26, 75, 140, 0.08);
+  --color-brand-tint:   rgba(26, 75, 140, 0.12);
+
+  /* Fundos — off-white levemente aquecido */
+  --color-bg:             #F7F6F3;
+  --color-bg-alt:         #EFEDE7;
+  --color-surface:        #FDFCFB;
+  --color-surface-raised: #FFFFFF;
+
+  /* Bordas */
+  --color-border:       #E4E1DA;
+  --color-border-light: #F0EDE7;
+
+  /* Tipografia */
+  --color-ink:       #1A1916;
+  --color-ink-muted: #6E6B63;
+  --color-ink-faint: #999690;
+}
+
+@theme inline {
+  --font-sans:    var(--font-inter);
+  --font-display: var(--font-geist);
+}
+
+/* === DARK MODE — extensão do sistema, não o principal === */
+:root[data-theme="dark"] {
+  --color-brand:        #6699CC;
+  --color-brand-strong: #4D80B8;
+  --color-brand-subtle: rgba(102, 153, 204, 0.1);
+  --color-brand-tint:   rgba(102, 153, 204, 0.15);
+
+  --color-bg:             #111210;
+  --color-bg-alt:         #17181A;
+  --color-surface:        #1C1D1B;
+  --color-surface-raised: #242522;
+
+  --color-border:       #2E2D2A;
+  --color-border-light: #252420;
+
+  --color-ink:       #F0EDE5;
+  --color-ink-muted: #9A968C;
+  --color-ink-faint: #6B6963;
+
+  --shadow-xs: 0 1px 2px rgba(0,0,0,0.3), 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.4), 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.5), 0 2px 6px rgba(0,0,0,0.35);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.55), 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* ===========================
+   BASE
+   =========================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-inter), sans-serif;
+  font-feature-settings: var(--font-feature-settings);
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+button {
+  transition: all 0.18s ease;
+}
+
+::selection {
+  background: var(--color-brand-tint);
+  color: var(--color-ink);
+}
+
+/* ===========================
+   COMPONENTES BASE
+   =========================== */
+
+/* Cartão de superfície — Material 3 style */
+.surface-card {
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.surface-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: rgba(26, 75, 140, 0.2);
+}
+
+:root[data-theme="dark"] .surface-card:hover {
+  border-color: rgba(102, 153, 204, 0.2);
+}
+
+/* Surface inset (formulários, painéis internos) */
+.surface-inset {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+}
+
+/* ===========================
+   CONTAINER
+   =========================== */
+
+.container-shell {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .container-shell {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-shell {
+    padding-inline: 2.5rem;
+  }
+}
+
+/* ===========================
+   DIVISOR SUTIL
+   =========================== */
+
+.divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-border) 20%,
+    var(--color-border) 80%,
+    transparent
+  );
+}
+
+
 :root {
   --font-feature-settings: "ss01", "cv11";
   --radius-sm: 0.75rem;
   --radius-md: 1rem;
   --radius-lg: 1.5rem;
-  --shadow-soft: 0 12px 30px -18px rgba(18, 24, 40, 0.24);
-  --shadow-elevated: 0 28px 46px -30px rgba(18, 24, 40, 0.3);
-  --color-brand: #1a73e8;
-  --color-brand-strong: #1558b0;
-  --color-bg: #f7f5ef;
-  --color-bg-alt: #efeee8;
-  --color-surface: #fcfbf8;
-  --color-surface-strong: #f2efe8;
-  --color-border: #d9d4ca;
-  --color-ink: #171918;
-  --color-ink-muted: #5a5f5c;
+
+  /* === LIGHT MODE === */
+  --color-brand: #7C3AED;
+  --color-brand-strong: #6D28D9;
+  --color-brand-glow: rgba(124, 58, 237, 0.15);
+  --color-bg: #FAFAFA;
+  --color-bg-alt: #F0F0F5;
+  --color-surface: #FFFFFF;
+  --color-surface-strong: #F4F4F8;
+  --color-border: #E2E2EC;
+  --color-ink: #0A0A0A;
+  --color-ink-muted: #6B7280;
+  --shadow-soft: 0 1px 12px rgba(124, 58, 237, 0.06), 0 4px 24px rgba(0,0,0,0.05);
+  --shadow-elevated: 0 8px 40px rgba(124, 58, 237, 0.1), 0 2px 8px rgba(0,0,0,0.06);
 }
 
 @theme inline {
@@ -23,28 +194,35 @@
   --font-display: var(--font-geist);
 }
 
+/* === DARK MODE (padrão) === */
 :root[data-theme="dark"] {
-  --color-brand: #6ea8fe;
-  --color-brand-strong: #8bb8ff;
-  --color-bg: #0d1014;
-  --color-bg-alt: #141920;
-  --color-surface: #161c23;
-  --color-surface-strong: #1f2530;
-  --color-border: #2f3949;
-  --color-ink: #f3f6fb;
-  --color-ink-muted: #9ba5b5;
-  --shadow-soft: 0 12px 30px -18px rgba(2, 6, 23, 0.66);
-  --shadow-elevated: 0 24px 46px -20px rgba(2, 6, 23, 0.75);
+  --color-brand: #A78BFA;
+  --color-brand-strong: #7C3AED;
+  --color-brand-glow: rgba(124, 58, 237, 0.25);
+  --color-bg: #0A0A0A;
+  --color-bg-alt: #111111;
+  --color-surface: #161616;
+  --color-surface-strong: #1C1C1C;
+  --color-border: #2A2A2A;
+  --color-ink: #F4F4F5;
+  --color-ink-muted: #A1A1AA;
+  --shadow-soft: 0 1px 12px rgba(0,0,0,0.5), 0 0 0 1px rgba(124, 58, 237, 0.06);
+  --shadow-elevated: 0 8px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(124, 58, 237, 0.1);
 }
 
 body {
-  background:
-    radial-gradient(circle at 15% -10%, rgba(26, 115, 232, 0.12), transparent 42%),
-    radial-gradient(circle at 90% 10%, rgba(22, 95, 191, 0.1), transparent 38%),
-    var(--color-bg);
+  background-color: var(--color-bg);
   color: var(--color-ink);
   font-family: var(--font-inter), sans-serif;
   font-feature-settings: var(--font-feature-settings);
+}
+
+/* Glow de fundo no dark mode */
+:root[data-theme="dark"] body {
+  background:
+    radial-gradient(ellipse 60% 50% at 20% -10%, rgba(124, 58, 237, 0.18), transparent),
+    radial-gradient(ellipse 50% 40% at 80% 110%, rgba(109, 40, 217, 0.12), transparent),
+    var(--color-bg);
 }
 
 a,
@@ -53,14 +231,20 @@ button {
 }
 
 ::selection {
-  background: rgba(26, 115, 232, 0.2);
+  background: rgba(124, 58, 237, 0.25);
 }
 
 .surface-card {
-  background: linear-gradient(170deg, var(--color-surface), var(--color-surface-strong));
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.surface-card:hover {
+  box-shadow: var(--shadow-elevated);
+  border-color: rgba(124, 58, 237, 0.35);
 }
 
 .container-shell {

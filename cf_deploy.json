@@ -1,0 +1,2822 @@
+{
+  "result": [
+    {
+      "id": "f1d0f245-ddd4-4225-987d-abb23d92509a",
+      "short_id": "f1d0f245",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://f1d0f245.agenciajn.pages.dev",
+      "created_on": "2026-04-25T18:39:36.277378Z",
+      "modified_on": "2026-04-25T18:39:45.396801Z",
+      "latest_stage": {
+        "name": "build",
+        "started_on": "2026-04-25T18:39:39.360816Z",
+        "ended_on": "2026-04-25T18:39:45.396801Z",
+        "status": "failure"
+      },
+      "deployment_trigger": {
+        "type": "github:push",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "03daa017cc576814e3e02e307b9096ccafe5224d",
+          "commit_message": "fix: remove pages_build_output_dir and add _worker.js for Cloudflare Pages auto-detection",
+          "commit_dirty": false
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-25T18:39:36.403867Z",
+          "ended_on": "2026-04-25T18:39:36.406881Z",
+          "status": "success"
+        },
+        {
+          "name": "initialize",
+          "started_on": "2026-04-25T18:39:36.406881Z",
+          "ended_on": "2026-04-25T18:39:37.941073Z",
+          "status": "success"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": "2026-04-25T18:39:37.941073Z",
+          "ended_on": "2026-04-25T18:39:39.360816Z",
+          "status": "success"
+        },
+        {
+          "name": "build",
+          "started_on": "2026-04-25T18:39:39.360816Z",
+          "ended_on": "2026-04-25T18:39:45.396801Z",
+          "status": "failure"
+        },
+        {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": null
+    },
+    {
+      "id": "311e9de8-aa60-4aad-808e-6ec599e941ae",
+      "short_id": "311e9de8",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://311e9de8.agenciajn.pages.dev",
+      "created_on": "2026-04-25T18:33:59.469605Z",
+      "modified_on": "2026-04-25T18:34:02.579254Z",
+      "latest_stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-04-25T18:34:02.579254Z",
+        "status": "success"
+      },
+      "deployment_trigger": {
+        "type": "ad_hoc",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "0addb723d96ab3b8a37b00ecab5d9a130775b3a9",
+          "commit_message": "fix: revert pages_build_output_dir to .open-next/assets for Cloudflare Pages compatibility",
+          "commit_dirty": true
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-25T18:33:59.469605Z",
+          "ended_on": null,
+          "status": "active"
+        },
+        {
+          "name": "initialize",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        },
+        {
+          "name": "build",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        },
+        {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": "2026-04-25T18:34:02.579254Z",
+          "status": "success"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": [
+        "https://www.agenciajn.com.br"
+      ],
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": false
+    },
+    {
+      "id": "ce47b0d4-5bb3-4843-83ff-74b998f9169b",
+      "short_id": "ce47b0d4",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://ce47b0d4.agenciajn.pages.dev",
+      "created_on": "2026-04-25T18:32:42.21633Z",
+      "modified_on": "2026-04-25T18:32:50.613198Z",
+      "latest_stage": {
+        "name": "build",
+        "started_on": "2026-04-25T18:32:45.190295Z",
+        "ended_on": "2026-04-25T18:32:50.613198Z",
+        "status": "failure"
+      },
+      "deployment_trigger": {
+        "type": "github:push",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "0addb723d96ab3b8a37b00ecab5d9a130775b3a9",
+          "commit_message": "fix: revert pages_build_output_dir to .open-next/assets for Cloudflare Pages compatibility",
+          "commit_dirty": false
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-25T18:32:42.423549Z",
+          "ended_on": "2026-04-25T18:32:42.428911Z",
+          "status": "success"
+        },
+        {
+          "name": "initialize",
+          "started_on": "2026-04-25T18:32:42.428911Z",
+          "ended_on": "2026-04-25T18:32:43.928051Z",
+          "status": "success"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": "2026-04-25T18:32:43.928051Z",
+          "ended_on": "2026-04-25T18:32:45.190295Z",
+          "status": "success"
+        },
+        {
+          "name": "build",
+          "started_on": "2026-04-25T18:32:45.190295Z",
+          "ended_on": "2026-04-25T18:32:50.613198Z",
+          "status": "failure"
+        },
+        {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": null
+    },
+    {
+      "id": "3644f566-9e63-4d5c-a4e3-03a2ec3fc74c",
+      "short_id": "3644f566",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://3644f566.agenciajn.pages.dev",
+      "created_on": "2026-04-25T18:20:35.493388Z",
+      "modified_on": "2026-04-25T18:20:38.067336Z",
+      "latest_stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-04-25T18:20:38.067336Z",
+        "status": "success"
+      },
+      "deployment_trigger": {
+        "type": "ad_hoc",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "6b237257a1ddb452569bc2b64694340e643ac25f",
+          "commit_message": "fix: remove invalid OpenNextConfig properties (buildDir, generatedFilesDir)",
+          "commit_dirty": true
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-25T18:20:35.493388Z",
+          "ended_on": null,
+          "status": "active"
+        },
+        {
+          "name": "initialize",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        },
+        {
+          "name": "build",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        },
+        {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": "2026-04-25T18:20:38.067336Z",
+          "status": "success"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": false
+    },
+    {
+      "id": "e8a5a8f8-0daa-4e56-81fa-e1780ec78b8b",
+      "short_id": "e8a5a8f8",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://e8a5a8f8.agenciajn.pages.dev",
+      "created_on": "2026-04-25T18:19:15.65707Z",
+      "modified_on": "2026-04-25T18:19:23.451488Z",
+      "latest_stage": {
+        "name": "build",
+        "started_on": "2026-04-25T18:19:18.363975Z",
+        "ended_on": "2026-04-25T18:19:23.451488Z",
+        "status": "failure"
+      },
+      "deployment_trigger": {
+        "type": "github:push",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "6b237257a1ddb452569bc2b64694340e643ac25f",
+          "commit_message": "fix: remove invalid OpenNextConfig properties (buildDir, generatedFilesDir)",
+          "commit_dirty": false
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-25T18:19:15.827772Z",
+          "ended_on": "2026-04-25T18:19:15.829365Z",
+          "status": "success"
+        },
+        {
+          "name": "initialize",
+          "started_on": "2026-04-25T18:19:15.829365Z",
+          "ended_on": "2026-04-25T18:19:17.400888Z",
+          "status": "success"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": "2026-04-25T18:19:17.400888Z",
+          "ended_on": "2026-04-25T18:19:18.363975Z",
+          "status": "success"
+        },
+        {
+          "name": "build",
+          "started_on": "2026-04-25T18:19:18.363975Z",
+          "ended_on": "2026-04-25T18:19:23.451488Z",
+          "status": "failure"
+        },
+        {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": null
+    },
+    {
+      "id": "c2958e44-0275-46a1-a544-55abc60ea32d",
+      "short_id": "c2958e44",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://c2958e44.agenciajn.pages.dev",
+      "created_on": "2026-04-25T18:13:47.781578Z",
+      "modified_on": "2026-04-25T18:13:55.273432Z",
+      "latest_stage": {
+        "name": "build",
+        "started_on": "2026-04-25T18:13:50.678632Z",
+        "ended_on": "2026-04-25T18:13:55.273432Z",
+        "status": "failure"
+      },
+      "deployment_trigger": {
+        "type": "github:push",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "7a59c1e0b3cf29a789859e33ab4544c9ac2f5ef4",
+          "commit_message": "fix: configure OpenNext for Cloudflare Pages correctly",
+          "commit_dirty": false
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-25T18:13:47.898791Z",
+          "ended_on": "2026-04-25T18:13:47.90158Z",
+          "status": "success"
+        },
+        {
+          "name": "initialize",
+          "started_on": "2026-04-25T18:13:47.90158Z",
+          "ended_on": "2026-04-25T18:13:49.491091Z",
+          "status": "success"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": "2026-04-25T18:13:49.491091Z",
+          "ended_on": "2026-04-25T18:13:50.678632Z",
+          "status": "success"
+        },
+        {
+          "name": "build",
+          "started_on": "2026-04-25T18:13:50.678632Z",
+          "ended_on": "2026-04-25T18:13:55.273432Z",
+          "status": "failure"
+        },
+        {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": null
+    },
+    {
+      "id": "9a130446-046b-44a7-93e1-b66bd08d749d",
+      "short_id": "9a130446",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://9a130446.agenciajn.pages.dev",
+      "created_on": "2026-04-25T18:10:03.479111Z",
+      "modified_on": "2026-04-25T18:10:06.409483Z",
+      "latest_stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-04-25T18:10:06.409483Z",
+        "status": "success"
+      },
+      "deployment_trigger": {
+        "type": "ad_hoc",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "ba77faed48458baace6adaa481a6b6f6f88aeb7a",
+          "commit_message": "fix(wrangler): remove triggers field incompatible with Pages and fix project name",
+          "commit_dirty": true
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-25T18:10:03.479111Z",
+          "ended_on": null,
+          "status": "active"
+        },
+        {
+          "name": "initialize",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        },
+        {
+          "name": "build",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        },
+        {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": "2026-04-25T18:10:06.409483Z",
+          "status": "success"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": false
+    },
+    {
+      "id": "a5885dcb-4c85-4a6b-8258-63745ab516a4",
+      "short_id": "a5885dcb",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://a5885dcb.agenciajn.pages.dev",
+      "created_on": "2026-04-25T18:08:53.899521Z",
+      "modified_on": "2026-04-25T18:08:55.831212Z",
+      "latest_stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-04-25T18:08:55.831212Z",
+        "status": "success"
+      },
+      "deployment_trigger": {
+        "type": "ad_hoc",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "0cf6dce50fb9dd5a4a7672902c9022ee2791169c",
+          "commit_message": "chore: cleanup rebuild trigger",
+          "commit_dirty": true
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-25T18:08:53.899521Z",
+          "ended_on": null,
+          "status": "active"
+        },
+        {
+          "name": "initialize",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        },
+        {
+          "name": "build",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        },
+        {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": "2026-04-25T18:08:55.831212Z",
+          "status": "success"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": false
+    },
+    {
+      "id": "c349ab56-f281-449b-8bb9-975dc6b490a5",
+      "short_id": "c349ab56",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://c349ab56.agenciajn.pages.dev",
+      "created_on": "2026-04-25T18:08:42.632035Z",
+      "modified_on": "2026-04-25T18:08:52.755973Z",
+      "latest_stage": {
+        "name": "build",
+        "started_on": "2026-04-25T18:08:47.55576Z",
+        "ended_on": "2026-04-25T18:08:52.755973Z",
+        "status": "failure"
+      },
+      "deployment_trigger": {
+        "type": "github:push",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "ba77faed48458baace6adaa481a6b6f6f88aeb7a",
+          "commit_message": "fix(wrangler): remove triggers field incompatible with Pages and fix project name",
+          "commit_dirty": false
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-25T18:08:43.098631Z",
+          "ended_on": "2026-04-25T18:08:43.099721Z",
+          "status": "success"
+        },
+        {
+          "name": "initialize",
+          "started_on": "2026-04-25T18:08:43.099721Z",
+          "ended_on": "2026-04-25T18:08:45.101677Z",
+          "status": "success"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": "2026-04-25T18:08:45.101677Z",
+          "ended_on": "2026-04-25T18:08:47.55576Z",
+          "status": "success"
+        },
+        {
+          "name": "build",
+          "started_on": "2026-04-25T18:08:47.55576Z",
+          "ended_on": "2026-04-25T18:08:52.755973Z",
+          "status": "failure"
+        },
+        {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": null
+    },
+    {
+      "id": "d42c45ac-3656-47a3-ad45-51d8c4666bbf",
+      "short_id": "d42c45ac",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://d42c45ac.agenciajn.pages.dev",
+      "created_on": "2026-04-25T18:08:32.02805Z",
+      "modified_on": "2026-04-25T18:08:34.482873Z",
+      "latest_stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-04-25T18:08:34.482873Z",
+        "status": "success"
+      },
+      "deployment_trigger": {
+        "type": "ad_hoc",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "9d0080ae2755a5217d0a884b7bd847844a9cdf1d",
+          "commit_message": "chore: force cloudflare pages rebuild and cache clear",
+          "commit_dirty": true
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-25T18:08:32.02805Z",
+          "ended_on": null,
+          "status": "active"
+        },
+        {
+          "name": "initialize",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        },
+        {
+          "name": "build",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        },
+        {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": "2026-04-25T18:08:34.482873Z",
+          "status": "success"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": false
+    },
+    {
+      "id": "2c49f4ea-aea4-42e2-b39a-11ecc39f65d3",
+      "short_id": "2c49f4ea",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://2c49f4ea.agenciajn.pages.dev",
+      "created_on": "2026-04-25T18:07:35.633645Z",
+      "modified_on": "2026-04-25T18:07:43.708201Z",
+      "latest_stage": {
+        "name": "build",
+        "started_on": "2026-04-25T18:07:40.846179Z",
+        "ended_on": "2026-04-25T18:07:43.708201Z",
+        "status": "failure"
+      },
+      "deployment_trigger": {
+        "type": "github:push",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "0cf6dce50fb9dd5a4a7672902c9022ee2791169c",
+          "commit_message": "chore: cleanup rebuild trigger",
+          "commit_dirty": false
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-25T18:07:35.917218Z",
+          "ended_on": "2026-04-25T18:07:35.922297Z",
+          "status": "success"
+        },
+        {
+          "name": "initialize",
+          "started_on": "2026-04-25T18:07:35.922297Z",
+          "ended_on": "2026-04-25T18:07:38.339483Z",
+          "status": "success"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": "2026-04-25T18:07:38.339483Z",
+          "ended_on": "2026-04-25T18:07:40.846179Z",
+          "status": "success"
+        },
+        {
+          "name": "build",
+          "started_on": "2026-04-25T18:07:40.846179Z",
+          "ended_on": "2026-04-25T18:07:43.708201Z",
+          "status": "failure"
+        },
+        {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": null
+    },
+    {
+      "id": "2540779d-3b92-4af5-bee3-68d6eb1cf824",
+      "short_id": "2540779d",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://2540779d.agenciajn.pages.dev",
+      "created_on": "2026-04-25T18:07:14.791861Z",
+      "modified_on": "2026-04-25T18:07:19.967166Z",
+      "latest_stage": {
+        "name": "build",
+        "started_on": "2026-04-25T18:07:18.015362Z",
+        "ended_on": "2026-04-25T18:07:19.967166Z",
+        "status": "failure"
+      },
+      "deployment_trigger": {
+        "type": "github:push",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "9d0080ae2755a5217d0a884b7bd847844a9cdf1d",
+          "commit_message": "chore: force cloudflare pages rebuild and cache clear",
+          "commit_dirty": false
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-25T18:07:14.994948Z",
+          "ended_on": "2026-04-25T18:07:15.000115Z",
+          "status": "success"
+        },
+        {
+          "name": "initialize",
+          "started_on": "2026-04-25T18:07:15.000115Z",
+          "ended_on": "2026-04-25T18:07:16.674193Z",
+          "status": "success"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": "2026-04-25T18:07:16.674193Z",
+          "ended_on": "2026-04-25T18:07:18.015362Z",
+          "status": "success"
+        },
+        {
+          "name": "build",
+          "started_on": "2026-04-25T18:07:18.015362Z",
+          "ended_on": "2026-04-25T18:07:19.967166Z",
+          "status": "failure"
+        },
+        {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": null
+    },
+    {
+      "id": "e1db886d-96b0-401a-adaa-9d51f78ef495",
+      "short_id": "e1db886d",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://e1db886d.agenciajn.pages.dev",
+      "created_on": "2026-04-25T17:57:07.603161Z",
+      "modified_on": "2026-04-25T17:57:11.15002Z",
+      "latest_stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-04-25T17:57:11.15002Z",
+        "status": "success"
+      },
+      "deployment_trigger": {
+        "type": "ad_hoc",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "29eaf00957b270707aa78b0502847e02b16cbf41",
+          "commit_message": "fix(ci): usar projeto Pages correto e evitar conflito do wrangler.toml",
+          "commit_dirty": true
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-25T17:57:07.603161Z",
+          "ended_on": null,
+          "status": "active"
+        },
+        {
+          "name": "initialize",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        },
+        {
+          "name": "build",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        },
+        {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": "2026-04-25T17:57:11.15002Z",
+          "status": "success"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": false
+    },
+    {
+      "id": "607cbfa5-f648-41e5-ac74-97f2a35b7db2",
+      "short_id": "607cbfa5",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://607cbfa5.agenciajn.pages.dev",
+      "created_on": "2026-04-25T17:55:56.382165Z",
+      "modified_on": "2026-04-25T17:56:01.252139Z",
+      "latest_stage": {
+        "name": "build",
+        "started_on": "2026-04-25T17:55:59.216564Z",
+        "ended_on": "2026-04-25T17:56:01.252139Z",
+        "status": "failure"
+      },
+      "deployment_trigger": {
+        "type": "github:push",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "29eaf00957b270707aa78b0502847e02b16cbf41",
+          "commit_message": "fix(ci): usar projeto Pages correto e evitar conflito do wrangler.toml",
+          "commit_dirty": false
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-25T17:55:56.562679Z",
+          "ended_on": "2026-04-25T17:55:56.568403Z",
+          "status": "success"
+        },
+        {
+          "name": "initialize",
+          "started_on": "2026-04-25T17:55:56.568403Z",
+          "ended_on": "2026-04-25T17:55:57.9257Z",
+          "status": "success"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": "2026-04-25T17:55:57.9257Z",
+          "ended_on": "2026-04-25T17:55:59.216564Z",
+          "status": "success"
+        },
+        {
+          "name": "build",
+          "started_on": "2026-04-25T17:55:59.216564Z",
+          "ended_on": "2026-04-25T17:56:01.252139Z",
+          "status": "failure"
+        },
+        {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": null
+    },
+    {
+      "id": "8cad5d96-97de-4edd-930e-da74f1fb05e7",
+      "short_id": "8cad5d96",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://8cad5d96.agenciajn.pages.dev",
+      "created_on": "2026-04-25T17:46:51.261723Z",
+      "modified_on": "2026-04-25T17:46:56.666793Z",
+      "latest_stage": {
+        "name": "build",
+        "started_on": "2026-04-25T17:46:54.65852Z",
+        "ended_on": "2026-04-25T17:46:56.666793Z",
+        "status": "failure"
+      },
+      "deployment_trigger": {
+        "type": "github:push",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "e8a569b947a23ad8ef07bb905a02f08d9462ea3b",
+          "commit_message": "fix(ci): corrigir formato do open-next.config para build Cloudflare",
+          "commit_dirty": false
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-25T17:46:51.438374Z",
+          "ended_on": "2026-04-25T17:46:51.443145Z",
+          "status": "success"
+        },
+        {
+          "name": "initialize",
+          "started_on": "2026-04-25T17:46:51.443145Z",
+          "ended_on": "2026-04-25T17:46:53.303991Z",
+          "status": "success"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": "2026-04-25T17:46:53.303991Z",
+          "ended_on": "2026-04-25T17:46:54.65852Z",
+          "status": "success"
+        },
+        {
+          "name": "build",
+          "started_on": "2026-04-25T17:46:54.65852Z",
+          "ended_on": "2026-04-25T17:46:56.666793Z",
+          "status": "failure"
+        },
+        {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": null
+    },
+    {
+      "id": "0fe34e44-e360-4309-bc02-94238c3697e4",
+      "short_id": "0fe34e44",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://0fe34e44.agenciajn.pages.dev",
+      "created_on": "2026-04-25T17:31:32.429313Z",
+      "modified_on": "2026-04-25T17:31:39.095803Z",
+      "latest_stage": {
+        "name": "build",
+        "started_on": "2026-04-25T17:31:36.79704Z",
+        "ended_on": "2026-04-25T17:31:39.095803Z",
+        "status": "failure"
+      },
+      "deployment_trigger": {
+        "type": "github:push",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "0069f36e84d17281c250c956d444e3d270a7a8ff",
+          "commit_message": "ci: aceitar token ou global api key no deploy Cloudflare",
+          "commit_dirty": false
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-25T17:31:32.576042Z",
+          "ended_on": "2026-04-25T17:31:32.57989Z",
+          "status": "success"
+        },
+        {
+          "name": "initialize",
+          "started_on": "2026-04-25T17:31:32.57989Z",
+          "ended_on": "2026-04-25T17:31:34.971787Z",
+          "status": "success"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": "2026-04-25T17:31:34.971787Z",
+          "ended_on": "2026-04-25T17:31:36.79704Z",
+          "status": "success"
+        },
+        {
+          "name": "build",
+          "started_on": "2026-04-25T17:31:36.79704Z",
+          "ended_on": "2026-04-25T17:31:39.095803Z",
+          "status": "failure"
+        },
+        {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": null
+    },
+    {
+      "id": "5e2a0be8-074d-4dbf-9ca7-55377c59623f",
+      "short_id": "5e2a0be8",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://5e2a0be8.agenciajn.pages.dev",
+      "created_on": "2026-04-25T17:22:32.534585Z",
+      "modified_on": "2026-04-25T17:22:38.342667Z",
+      "latest_stage": {
+        "name": "build",
+        "started_on": "2026-04-25T17:22:36.311051Z",
+        "ended_on": "2026-04-25T17:22:38.342667Z",
+        "status": "failure"
+      },
+      "deployment_trigger": {
+        "type": "github:push",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "7816ce3c1fe1b45c209b78975d35acaaf9f36b27",
+          "commit_message": "ci: GitHub Actions + OpenNext adapter para Cloudflare Pages",
+          "commit_dirty": false
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-25T17:22:33.21777Z",
+          "ended_on": "2026-04-25T17:22:33.221967Z",
+          "status": "success"
+        },
+        {
+          "name": "initialize",
+          "started_on": "2026-04-25T17:22:33.221967Z",
+          "ended_on": "2026-04-25T17:22:35.128939Z",
+          "status": "success"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": "2026-04-25T17:22:35.128939Z",
+          "ended_on": "2026-04-25T17:22:36.311051Z",
+          "status": "success"
+        },
+        {
+          "name": "build",
+          "started_on": "2026-04-25T17:22:36.311051Z",
+          "ended_on": "2026-04-25T17:22:38.342667Z",
+          "status": "failure"
+        },
+        {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": null
+    },
+    {
+      "id": "768a8fcf-9463-4451-b48f-ee50b486e882",
+      "short_id": "768a8fcf",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://768a8fcf.agenciajn.pages.dev",
+      "created_on": "2026-04-25T17:14:40.370462Z",
+      "modified_on": "2026-04-25T17:14:45.559938Z",
+      "latest_stage": {
+        "name": "build",
+        "started_on": "2026-04-25T17:14:43.309353Z",
+        "ended_on": "2026-04-25T17:14:45.559938Z",
+        "status": "failure"
+      },
+      "deployment_trigger": {
+        "type": "github:push",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "8fb6f43f6356356eb29acfd0b9ef6fa980c4142d",
+          "commit_message": "Fase 0/1: scaffold Next.js 15 + design system M3 + landing responsiva + testes E2E base",
+          "commit_dirty": false
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-25T17:14:40.52051Z",
+          "ended_on": "2026-04-25T17:14:40.527235Z",
+          "status": "success"
+        },
+        {
+          "name": "initialize",
+          "started_on": "2026-04-25T17:14:40.527235Z",
+          "ended_on": "2026-04-25T17:14:42.16019Z",
+          "status": "success"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": "2026-04-25T17:14:42.16019Z",
+          "ended_on": "2026-04-25T17:14:43.309353Z",
+          "status": "success"
+        },
+        {
+          "name": "build",
+          "started_on": "2026-04-25T17:14:43.309353Z",
+          "ended_on": "2026-04-25T17:14:45.559938Z",
+          "status": "failure"
+        },
+        {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": null
+    },
+    {
+      "id": "52c53a81-d3c0-454e-a0ec-0492c1cd9374",
+      "short_id": "52c53a81",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://52c53a81.agenciajn.pages.dev",
+      "created_on": "2026-04-24T01:05:04.842473Z",
+      "modified_on": "2026-04-24T01:06:42.821984Z",
+      "latest_stage": {
+        "name": "deploy",
+        "started_on": "2026-04-24T01:06:35.003308Z",
+        "ended_on": "2026-04-24T01:06:42.821984Z",
+        "status": "success"
+      },
+      "deployment_trigger": {
+        "type": "github:push",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "d36c0a9bb9693c2c64c8259d20c693da3519575e",
+          "commit_message": "fix: corrige typo no hero w-auto",
+          "commit_dirty": false
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-24T01:05:05.019617Z",
+          "ended_on": "2026-04-24T01:05:05.021888Z",
+          "status": "success"
+        },
+        {
+          "name": "initialize",
+          "started_on": "2026-04-24T01:05:05.021888Z",
+          "ended_on": "2026-04-24T01:05:07.729263Z",
+          "status": "success"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": "2026-04-24T01:05:07.729263Z",
+          "ended_on": "2026-04-24T01:05:09.172414Z",
+          "status": "success"
+        },
+        {
+          "name": "build",
+          "started_on": "2026-04-24T01:05:09.172414Z",
+          "ended_on": "2026-04-24T01:06:35.003308Z",
+          "status": "success"
+        },
+        {
+          "name": "deploy",
+          "started_on": "2026-04-24T01:06:35.003308Z",
+          "ended_on": "2026-04-24T01:06:42.821984Z",
+          "status": "success"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": false,
+      "framework": "next"
+    },
+    {
+      "id": "5e6d373a-b21c-4805-8d38-53dc5eb52b6c",
+      "short_id": "5e6d373a",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://5e6d373a.agenciajn.pages.dev",
+      "created_on": "2026-04-24T00:58:58.957275Z",
+      "modified_on": "2026-04-24T01:01:31.292705Z",
+      "latest_stage": {
+        "name": "deploy",
+        "started_on": "2026-04-24T01:01:21.082496Z",
+        "ended_on": "2026-04-24T01:01:31.292705Z",
+        "status": "success"
+      },
+      "deployment_trigger": {
+        "type": "github:push",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "3dba158452486b6e2f51dce707ba3681f7e414af",
+          "commit_message": "refactor: design editorial absoluto na home, removidos os paddings excessivos, pílulas de IA genéricas e card styles antigos. Construção flat/brutalista para alinhar ao design system premium",
+          "commit_dirty": false
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-24T00:58:59.128753Z",
+          "ended_on": "2026-04-24T00:58:59.130847Z",
+          "status": "success"
+        },
+        {
+          "name": "initialize",
+          "started_on": "2026-04-24T00:58:59.130847Z",
+          "ended_on": "2026-04-24T00:59:01.372076Z",
+          "status": "success"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": "2026-04-24T00:59:01.372076Z",
+          "ended_on": "2026-04-24T00:59:03.480812Z",
+          "status": "success"
+        },
+        {
+          "name": "build",
+          "started_on": "2026-04-24T00:59:03.480812Z",
+          "ended_on": "2026-04-24T01:01:21.082496Z",
+          "status": "success"
+        },
+        {
+          "name": "deploy",
+          "started_on": "2026-04-24T01:01:21.082496Z",
+          "ended_on": "2026-04-24T01:01:31.292705Z",
+          "status": "success"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": false,
+      "framework": "next"
+    },
+    {
+      "id": "756bc2d6-1cd7-48a9-8fe3-d6fe179ea03b",
+      "short_id": "756bc2d6",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://756bc2d6.agenciajn.pages.dev",
+      "created_on": "2026-04-24T00:39:01.368885Z",
+      "modified_on": "2026-04-24T00:41:37.59725Z",
+      "latest_stage": {
+        "name": "deploy",
+        "started_on": "2026-04-24T00:41:26.953028Z",
+        "ended_on": "2026-04-24T00:41:37.59725Z",
+        "status": "success"
+      },
+      "deployment_trigger": {
+        "type": "github:push",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "170a7dea2b354221c4f4349d3ea56249b7b4bad3",
+          "commit_message": "fix: remover rota duplicada do portfolio que quebrou o build",
+          "commit_dirty": false
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-24T00:39:01.633185Z",
+          "ended_on": "2026-04-24T00:39:01.65072Z",
+          "status": "success"
+        },
+        {
+          "name": "initialize",
+          "started_on": "2026-04-24T00:39:01.65072Z",
+          "ended_on": "2026-04-24T00:39:03.968727Z",
+          "status": "success"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": "2026-04-24T00:39:03.968727Z",
+          "ended_on": "2026-04-24T00:39:05.829921Z",
+          "status": "success"
+        },
+        {
+          "name": "build",
+          "started_on": "2026-04-24T00:39:05.829921Z",
+          "ended_on": "2026-04-24T00:41:26.953028Z",
+          "status": "success"
+        },
+        {
+          "name": "deploy",
+          "started_on": "2026-04-24T00:41:26.953028Z",
+          "ended_on": "2026-04-24T00:41:37.59725Z",
+          "status": "success"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": false,
+      "framework": "next"
+    },
+    {
+      "id": "4c1e4d47-d767-4b4c-8d33-b7d8d8ccd3fb",
+      "short_id": "4c1e4d47",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://4c1e4d47.agenciajn.pages.dev",
+      "created_on": "2026-04-24T00:34:44.597805Z",
+      "modified_on": "2026-04-24T00:35:32.953231Z",
+      "latest_stage": {
+        "name": "build",
+        "started_on": "2026-04-24T00:34:47.965336Z",
+        "ended_on": "2026-04-24T00:35:32.953231Z",
+        "status": "failure"
+      },
+      "deployment_trigger": {
+        "type": "github:push",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "bb3529c36fdd5f80a38b770b0cb2a1b50fc66ad3",
+          "commit_message": "feat: refatoracao estetica premium Fase 0 e 1 (Hero e Portfolio)",
+          "commit_dirty": false
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-24T00:34:44.743355Z",
+          "ended_on": "2026-04-24T00:34:44.746058Z",
+          "status": "success"
+        },
+        {
+          "name": "initialize",
+          "started_on": "2026-04-24T00:34:44.746058Z",
+          "ended_on": "2026-04-24T00:34:46.73222Z",
+          "status": "success"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": "2026-04-24T00:34:46.73222Z",
+          "ended_on": "2026-04-24T00:34:47.965336Z",
+          "status": "success"
+        },
+        {
+          "name": "build",
+          "started_on": "2026-04-24T00:34:47.965336Z",
+          "ended_on": "2026-04-24T00:35:32.953231Z",
+          "status": "failure"
+        },
+        {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": null,
+          "status": "idle"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": null
+    },
+    {
+      "id": "9f51eff7-57d6-4d7e-a1ab-0100440f268b",
+      "short_id": "9f51eff7",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://9f51eff7.agenciajn.pages.dev",
+      "created_on": "2026-04-23T23:51:59.924846Z",
+      "modified_on": "2026-04-23T23:53:45.238277Z",
+      "latest_stage": {
+        "name": "deploy",
+        "started_on": "2026-04-23T23:53:38.092637Z",
+        "ended_on": "2026-04-23T23:53:45.238277Z",
+        "status": "success"
+      },
+      "deployment_trigger": {
+        "type": "github:push",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "80d1b0054eef48e9f6586f81f4d56c748423af7f",
+          "commit_message": "Revert: Voltando os arquivos de interface ao Design anterior como solicitado",
+          "commit_dirty": false
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-23T23:52:00.049726Z",
+          "ended_on": "2026-04-23T23:52:00.05355Z",
+          "status": "success"
+        },
+        {
+          "name": "initialize",
+          "started_on": "2026-04-23T23:52:00.05355Z",
+          "ended_on": "2026-04-23T23:52:01.809382Z",
+          "status": "success"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": "2026-04-23T23:52:01.809382Z",
+          "ended_on": "2026-04-23T23:52:03.174129Z",
+          "status": "success"
+        },
+        {
+          "name": "build",
+          "started_on": "2026-04-23T23:52:03.174129Z",
+          "ended_on": "2026-04-23T23:53:38.092637Z",
+          "status": "success"
+        },
+        {
+          "name": "deploy",
+          "started_on": "2026-04-23T23:53:38.092637Z",
+          "ended_on": "2026-04-23T23:53:45.238277Z",
+          "status": "success"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": false,
+      "framework": "next"
+    },
+    {
+      "id": "f69c9d11-bba4-4e68-b090-bb789817117b",
+      "short_id": "f69c9d11",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://f69c9d11.agenciajn.pages.dev",
+      "created_on": "2026-04-23T23:30:32.218555Z",
+      "modified_on": "2026-04-23T23:32:07.719258Z",
+      "latest_stage": {
+        "name": "deploy",
+        "started_on": "2026-04-23T23:32:00.289027Z",
+        "ended_on": "2026-04-23T23:32:07.719258Z",
+        "status": "success"
+      },
+      "deployment_trigger": {
+        "type": "github:push",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "e95876995369584bba95f0ded41bb0153d0220ac",
+          "commit_message": "fix(ui): força re-build limpo com novas props de styling de M3",
+          "commit_dirty": false
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-23T23:30:32.360552Z",
+          "ended_on": "2026-04-23T23:30:32.363487Z",
+          "status": "success"
+        },
+        {
+          "name": "initialize",
+          "started_on": "2026-04-23T23:30:32.363487Z",
+          "ended_on": "2026-04-23T23:30:33.847441Z",
+          "status": "success"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": "2026-04-23T23:30:33.847441Z",
+          "ended_on": "2026-04-23T23:30:35.209888Z",
+          "status": "success"
+        },
+        {
+          "name": "build",
+          "started_on": "2026-04-23T23:30:35.209888Z",
+          "ended_on": "2026-04-23T23:32:00.289027Z",
+          "status": "success"
+        },
+        {
+          "name": "deploy",
+          "started_on": "2026-04-23T23:32:00.289027Z",
+          "ended_on": "2026-04-23T23:32:07.719258Z",
+          "status": "success"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": false,
+      "framework": "next"
+    },
+    {
+      "id": "522bbeac-bba8-40c8-a182-4bd2396221f9",
+      "short_id": "522bbeac",
+      "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "project_name": "agenciajn",
+      "environment": "production",
+      "url": "https://522bbeac.agenciajn.pages.dev",
+      "created_on": "2026-04-23T23:23:35.244596Z",
+      "modified_on": "2026-04-23T23:55:38.128018Z",
+      "latest_stage": {
+        "name": "deploy",
+        "started_on": "2026-04-23T23:25:01.240184Z",
+        "ended_on": "2026-04-23T23:25:10.009549Z",
+        "status": "success"
+      },
+      "deployment_trigger": {
+        "type": "github:push",
+        "metadata": {
+          "branch": "main",
+          "commit_hash": "bebb7f0104e12699f7ca6deb1123937e07c50c65",
+          "commit_message": "chore: limpa cache gerado pelo next.js e force rebuild limpo na cloudflare",
+          "commit_dirty": false
+        }
+      },
+      "stages": [
+        {
+          "name": "queued",
+          "started_on": "2026-04-23T23:23:35.393575Z",
+          "ended_on": "2026-04-23T23:23:35.397567Z",
+          "status": "success"
+        },
+        {
+          "name": "initialize",
+          "started_on": "2026-04-23T23:23:35.397567Z",
+          "ended_on": "2026-04-23T23:23:37.270332Z",
+          "status": "success"
+        },
+        {
+          "name": "clone_repo",
+          "started_on": "2026-04-23T23:23:37.270332Z",
+          "ended_on": "2026-04-23T23:23:38.272848Z",
+          "status": "success"
+        },
+        {
+          "name": "build",
+          "started_on": "2026-04-23T23:23:38.272848Z",
+          "ended_on": "2026-04-23T23:25:01.240184Z",
+          "status": "success"
+        },
+        {
+          "name": "deploy",
+          "started_on": "2026-04-23T23:25:01.240184Z",
+          "ended_on": "2026-04-23T23:25:10.009549Z",
+          "status": "success"
+        }
+      ],
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "build_caching": null,
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "repo_name": "agenciajn",
+          "production_branch": "main",
+          "pr_comments_enabled": false
+        }
+      },
+      "env_vars": {
+        "ADMIN_EMAIL": {
+          "type": "plain_text",
+          "value": "nilson.brites@gmail.com"
+        },
+        "ADMIN_PASSWORD": {
+          "type": "plain_text",
+          "value": "AgJN@9F9627D1!26"
+        },
+        "CF_PAGES": {
+          "type": "plain_text",
+          "value": "1"
+        },
+        "JWT_SECRET": {
+          "type": "plain_text",
+          "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+        },
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+        },
+        "RESEND_API_KEY": {
+          "type": "plain_text",
+          "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+        },
+        "TURNSTILE_SECRET_KEY\t": {
+          "type": "plain_text",
+          "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+        }
+      },
+      "compatibility_date": "2026-04-23",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": null,
+      "aliases": null,
+      "is_skipped": false,
+      "production_branch": "main",
+      "uses_functions": false,
+      "framework": "next"
+    }
+  ],
+  "success": true,
+  "errors": [],
+  "messages": [],
+  "result_info": {
+    "page": 1,
+    "per_page": 25,
+    "count": 25,
+    "total_count": 36,
+    "total_pages": 2
+  }
+}

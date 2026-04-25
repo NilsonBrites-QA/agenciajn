@@ -1,64 +1,110 @@
-// Uses client rendering for card reveal and hover motion.
+// Uses client rendering para animações de entrada com Framer Motion.
 "use client";
 
 import { motion } from "framer-motion";
-import { Brush, Search, Smartphone, TrendingUp } from "lucide-react";
 
 import { Container } from "@/components/ui/container";
-import { SectionHeading } from "@/components/ui/section-heading";
 
 const services = [
   {
-    icon: Smartphone,
-    title: "Criacao de Sites",
-    description: "Experiencias orientadas a conversao, com navegacao clara e desempenho premium em todos os dispositivos.",
+    num: "01",
+    title: "Criação de Sites",
+    description:
+      "Experiências orientadas a conversão, com navegação clara e desempenho premium em todos os dispositivos.",
+    tags: ["Next.js", "Performance", "Acessibilidade"],
   },
   {
-    icon: Search,
-    title: "SEO Estrategico",
-    description: "Camada tecnica e editorial para aumentar visibilidade, autoridade e oportunidades de venda no Google.",
+    num: "02",
+    title: "SEO Estratégico",
+    description:
+      "Camada técnica e editorial que aumenta visibilidade, autoridade e oportunidades de venda no Google.",
+    tags: ["Técnico", "Conteúdo", "Core Web Vitals"],
   },
   {
-    icon: TrendingUp,
+    num: "03",
     title: "Redes Sociais",
-    description: "Calendario e posicionamento para fortalecer marca, gerar demanda e manter consistencia na comunicacao.",
+    description:
+      "Calendário e posicionamento para fortalecer marca, gerar demanda e manter consistência na comunicação.",
+    tags: ["Instagram", "LinkedIn", "Planejamento"],
   },
   {
-    icon: Brush,
-    title: "Design Grafico",
-    description: "Sistemas visuais com identidade forte para destacar seu negocio em pontos de contato online e offline.",
+    num: "04",
+    title: "Design Gráfico",
+    description:
+      "Sistemas visuais com identidade forte para destacar seu negócio em todos os pontos de contato.",
+    tags: ["Identidade Visual", "UI/UX", "Materiais"],
   },
 ];
 
+const stagger = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.08 } },
+};
+const fadeUp = {
+  hidden: { opacity: 0, y: 16 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: "easeOut" } },
+};
+
 export function ServicesSection() {
   return (
-    <section id="servicos" className="py-24 sm:py-28">
+    <section id="servicos" className="py-24 sm:py-32" style={{ background: "var(--color-bg-alt)" }}>
       <Container>
-        <SectionHeading
-          eyebrow="Servicos"
-          title="Entrega criativa com estrutura para escalar seu crescimento."
-          description="Cada frente combina estrategia, execucao e acompanhamento para transformar visitas em oportunidades comerciais reais."
-        />
+        {/* Cabeçalho editorial */}
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div className="max-w-2xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--color-brand)]">
+              Serviços
+            </p>
+            <h2 className="mt-4 font-[var(--font-geist)] text-3xl font-extrabold tracking-tight text-[var(--color-ink)] sm:text-4xl">
+              Entrega criativa com estrutura para escalar.
+            </h2>
+          </div>
+          <p className="max-w-sm text-[var(--color-ink-muted)] sm:text-right">
+            Cada frente combina estratégia, execução e acompanhamento.
+          </p>
+        </div>
 
+        {/* Lista editorial numerada */}
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.25 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mt-12 grid gap-5 md:grid-cols-2"
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.15 }}
+          className="mt-14 divide-y divide-[var(--color-border)]"
         >
           {services.map((service) => (
             <motion.article
-              key={service.title}
-              whileHover={{ y: -4 }}
-              transition={{ duration: 0.2, ease: "easeOut" }}
-              className="surface-card p-7"
+              key={service.num}
+              variants={fadeUp}
+              className="group flex flex-col gap-4 py-8 sm:flex-row sm:items-start sm:gap-12"
             >
-              <div className="inline-flex rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg)] p-3 text-[var(--color-brand)]">
-                <service.icon size={22} aria-hidden="true" />
+              {/* Número */}
+              <span className="font-[var(--font-geist)] text-sm font-bold tabular-nums text-[var(--color-ink-faint)] group-hover:text-[var(--color-brand)] transition-colors sm:w-10 sm:shrink-0 sm:pt-1">
+                {service.num}
+              </span>
+
+              {/* Conteúdo */}
+              <div className="flex-1">
+                <h3 className="font-[var(--font-geist)] text-xl font-bold tracking-tight text-[var(--color-ink)] group-hover:text-[var(--color-brand)] transition-colors">
+                  {service.title}
+                </h3>
+                <p className="mt-2 text-[var(--color-ink-muted)] leading-relaxed">
+                  {service.description}
+                </p>
               </div>
-              <h3 className="mt-5 font-[var(--font-geist)] text-2xl font-bold tracking-tight text-[var(--color-ink)]">{service.title}</h3>
-              <p className="mt-3 leading-relaxed text-[var(--color-ink-muted)]">{service.description}</p>
+
+              {/* Tags */}
+              <div className="flex flex-wrap gap-2 sm:w-64 sm:shrink-0 sm:justify-end">
+                {service.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-md border border-[var(--color-border)] px-2.5 py-1 text-xs font-medium text-[var(--color-ink-muted)]"
+                    style={{ background: "var(--color-surface)" }}
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </motion.article>
           ))}
         </motion.div>

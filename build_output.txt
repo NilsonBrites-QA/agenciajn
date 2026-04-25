@@ -1,0 +1,28 @@
+
+> agencia-jn@0.1.0 pages:build
+> opennextjs-cloudflare build
+
+
+┌─────────────────────────────┐
+│ OpenNext — Cloudflare build │
+└─────────────────────────────┘
+
+App directory: g:\Desenvolvimento Clientes\Agencia_JN\agencia-jn
+Next.js version : 15.5.15
+@opennextjs/cloudflare version: 1.19.4
+@opennextjs/aws version: 3.10.4
+
+┌─────────────────────────────────┐
+│ OpenNext — Building Next.js app │
+└─────────────────────────────────┘
+
+
+> agencia-jn@0.1.0 build
+> next build
+
+   ▲ Next.js 15.5.15
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 4.8s
+   Linting and checking validity of types ...

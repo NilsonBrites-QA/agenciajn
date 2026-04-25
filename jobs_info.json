@@ -1,0 +1,105 @@
+{
+  "total_count": 1,
+  "jobs": [
+    {
+      "id": 73025154351,
+      "run_id": 24937381376,
+      "workflow_name": "Deploy to Cloudflare Pages",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/NilsonBrites-QA/agenciajn/actions/runs/24937381376",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOSKFfTM8AAAARAKNtLw",
+      "head_sha": "7a59c1e0b3cf29a789859e33ab4544c9ac2f5ef4",
+      "url": "https://api.github.com/repos/NilsonBrites-QA/agenciajn/actions/jobs/73025154351",
+      "html_url": "https://github.com/NilsonBrites-QA/agenciajn/actions/runs/24937381376/job/73025154351",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-04-25T18:13:49Z",
+      "started_at": "2026-04-25T18:13:52Z",
+      "completed_at": "2026-04-25T18:14:39Z",
+      "name": "Deploy",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-04-25T18:13:53Z",
+          "completed_at": "2026-04-25T18:13:53Z"
+        },
+        {
+          "name": "Checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-04-25T18:13:53Z",
+          "completed_at": "2026-04-25T18:13:54Z"
+        },
+        {
+          "name": "Setup Node.js",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-04-25T18:13:54Z",
+          "completed_at": "2026-04-25T18:13:59Z"
+        },
+        {
+          "name": "Install dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-04-25T18:13:59Z",
+          "completed_at": "2026-04-25T18:14:15Z"
+        },
+        {
+          "name": "Build (OpenNext for Cloudflare)",
+          "status": "completed",
+          "conclusion": "failure",
+          "number": 5,
+          "started_at": "2026-04-25T18:14:15Z",
+          "completed_at": "2026-04-25T18:14:37Z"
+        },
+        {
+          "name": "Deploy to Cloudflare Pages",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 6,
+          "started_at": "2026-04-25T18:14:37Z",
+          "completed_at": "2026-04-25T18:14:37Z"
+        },
+        {
+          "name": "Post Setup Node.js",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 11,
+          "started_at": "2026-04-25T18:14:37Z",
+          "completed_at": "2026-04-25T18:14:37Z"
+        },
+        {
+          "name": "Post Checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-04-25T18:14:37Z",
+          "completed_at": "2026-04-25T18:14:37Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-04-25T18:14:37Z",
+          "completed_at": "2026-04-25T18:14:37Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/NilsonBrites-QA/agenciajn/check-runs/73025154351",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000000132,
+      "runner_name": "GitHub Actions 1000000132",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

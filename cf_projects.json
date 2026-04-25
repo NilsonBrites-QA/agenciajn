@@ -1,0 +1,365 @@
+{
+  "result": [
+    {
+      "id": "dac65386-e61b-425b-93fe-5730d0532690",
+      "name": "agenciajn",
+      "subdomain": "agenciajn.pages.dev",
+      "domains": [
+        "agenciajn.pages.dev",
+        "www.agenciajn.com.br"
+      ],
+      "source": {
+        "type": "github",
+        "config": {
+          "owner": "NilsonBrites-QA",
+          "owner_id": "250093274",
+          "repo_name": "agenciajn",
+          "repo_id": "1218535244",
+          "production_branch": "main",
+          "pr_comments_enabled": true,
+          "deployments_enabled": true,
+          "production_deployments_enabled": true,
+          "preview_deployment_setting": "all",
+          "preview_branch_includes": [
+            "*"
+          ],
+          "preview_branch_excludes": [],
+          "path_includes": [
+            "*"
+          ],
+          "path_excludes": []
+        }
+      },
+      "build_config": {
+        "build_command": "npx @opennextjs/cloudflare build",
+        "destination_dir": ".open-next/assets",
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "deployment_configs": {
+        "preview": {
+          "env_vars": {
+            "ADMIN_EMAIL": {
+              "type": "plain_text",
+              "value": "nilson.brites@gmail.com"
+            },
+            "ADMIN_PASSWORD": {
+              "type": "plain_text",
+              "value": "AgJN@9F9627D1!26"
+            },
+            "CF_PAGES": {
+              "type": "plain_text",
+              "value": "1"
+            },
+            "JWT_SECRET": {
+              "type": "plain_text",
+              "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+            },
+            "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+              "type": "plain_text",
+              "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+            },
+            "RESEND_API_KEY": {
+              "type": "plain_text",
+              "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+            },
+            "TURNSTILE_SECRET_KEY\t": {
+              "type": "plain_text",
+              "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+            }
+          },
+          "fail_open": true,
+          "always_use_latest_compatibility_date": false,
+          "compatibility_date": "2026-04-23",
+          "compatibility_flags": [],
+          "build_image_major_version": 3,
+          "usage_model": "standard"
+        },
+        "production": {
+          "env_vars": {
+            "ADMIN_EMAIL": {
+              "type": "plain_text",
+              "value": "nilson.brites@gmail.com"
+            },
+            "ADMIN_PASSWORD": {
+              "type": "plain_text",
+              "value": "AgJN@9F9627D1!26"
+            },
+            "CF_PAGES": {
+              "type": "plain_text",
+              "value": "1"
+            },
+            "JWT_SECRET": {
+              "type": "plain_text",
+              "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+            },
+            "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+              "type": "plain_text",
+              "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+            },
+            "RESEND_API_KEY": {
+              "type": "plain_text",
+              "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+            },
+            "TURNSTILE_SECRET_KEY\t": {
+              "type": "plain_text",
+              "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+            }
+          },
+          "fail_open": true,
+          "always_use_latest_compatibility_date": false,
+          "compatibility_date": "2026-04-23",
+          "compatibility_flags": [],
+          "build_image_major_version": 3,
+          "usage_model": "standard"
+        }
+      },
+      "latest_deployment": {
+        "id": "311e9de8-aa60-4aad-808e-6ec599e941ae",
+        "short_id": "311e9de8",
+        "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+        "project_name": "agenciajn",
+        "environment": "production",
+        "url": "https://311e9de8.agenciajn.pages.dev",
+        "created_on": "2026-04-25T18:33:59.469605Z",
+        "modified_on": "2026-04-25T18:34:02.579254Z",
+        "latest_stage": {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": "2026-04-25T18:34:02.579254Z",
+          "status": "success"
+        },
+        "deployment_trigger": {
+          "type": "ad_hoc",
+          "metadata": {
+            "branch": "main",
+            "commit_hash": "0addb723d96ab3b8a37b00ecab5d9a130775b3a9",
+            "commit_message": "fix: revert pages_build_output_dir to .open-next/assets for Cloudflare Pages compatibility",
+            "commit_dirty": true
+          }
+        },
+        "stages": [
+          {
+            "name": "queued",
+            "started_on": "2026-04-25T18:33:59.469605Z",
+            "ended_on": null,
+            "status": "active"
+          },
+          {
+            "name": "initialize",
+            "started_on": null,
+            "ended_on": null,
+            "status": "idle"
+          },
+          {
+            "name": "clone_repo",
+            "started_on": null,
+            "ended_on": null,
+            "status": "idle"
+          },
+          {
+            "name": "build",
+            "started_on": null,
+            "ended_on": null,
+            "status": "idle"
+          },
+          {
+            "name": "deploy",
+            "started_on": null,
+            "ended_on": "2026-04-25T18:34:02.579254Z",
+            "status": "success"
+          }
+        ],
+        "build_config": {
+          "build_command": "npx @opennextjs/cloudflare build",
+          "destination_dir": ".open-next/assets",
+          "build_caching": null,
+          "root_dir": "",
+          "web_analytics_tag": null,
+          "web_analytics_token": null
+        },
+        "source": {
+          "type": "github",
+          "config": {
+            "owner": "NilsonBrites-QA",
+            "repo_name": "agenciajn",
+            "production_branch": "main",
+            "pr_comments_enabled": false
+          }
+        },
+        "env_vars": {
+          "ADMIN_EMAIL": {
+            "type": "plain_text",
+            "value": "nilson.brites@gmail.com"
+          },
+          "ADMIN_PASSWORD": {
+            "type": "plain_text",
+            "value": "AgJN@9F9627D1!26"
+          },
+          "CF_PAGES": {
+            "type": "plain_text",
+            "value": "1"
+          },
+          "JWT_SECRET": {
+            "type": "plain_text",
+            "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+          },
+          "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+            "type": "plain_text",
+            "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+          },
+          "RESEND_API_KEY": {
+            "type": "plain_text",
+            "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+          },
+          "TURNSTILE_SECRET_KEY\t": {
+            "type": "plain_text",
+            "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+          }
+        },
+        "compatibility_date": "2026-04-23",
+        "compatibility_flags": [],
+        "build_image_major_version": 3,
+        "usage_model": null,
+        "aliases": [
+          "https://www.agenciajn.com.br"
+        ],
+        "is_skipped": false,
+        "production_branch": "main",
+        "uses_functions": false
+      },
+      "canonical_deployment": {
+        "id": "311e9de8-aa60-4aad-808e-6ec599e941ae",
+        "short_id": "311e9de8",
+        "project_id": "dac65386-e61b-425b-93fe-5730d0532690",
+        "project_name": "agenciajn",
+        "environment": "production",
+        "url": "https://311e9de8.agenciajn.pages.dev",
+        "created_on": "2026-04-25T18:33:59.469605Z",
+        "modified_on": "2026-04-25T18:34:02.579254Z",
+        "latest_stage": {
+          "name": "deploy",
+          "started_on": null,
+          "ended_on": "2026-04-25T18:34:02.579254Z",
+          "status": "success"
+        },
+        "deployment_trigger": {
+          "type": "ad_hoc",
+          "metadata": {
+            "branch": "main",
+            "commit_hash": "0addb723d96ab3b8a37b00ecab5d9a130775b3a9",
+            "commit_message": "fix: revert pages_build_output_dir to .open-next/assets for Cloudflare Pages compatibility",
+            "commit_dirty": true
+          }
+        },
+        "stages": [
+          {
+            "name": "queued",
+            "started_on": "2026-04-25T18:33:59.469605Z",
+            "ended_on": null,
+            "status": "active"
+          },
+          {
+            "name": "initialize",
+            "started_on": null,
+            "ended_on": null,
+            "status": "idle"
+          },
+          {
+            "name": "clone_repo",
+            "started_on": null,
+            "ended_on": null,
+            "status": "idle"
+          },
+          {
+            "name": "build",
+            "started_on": null,
+            "ended_on": null,
+            "status": "idle"
+          },
+          {
+            "name": "deploy",
+            "started_on": null,
+            "ended_on": "2026-04-25T18:34:02.579254Z",
+            "status": "success"
+          }
+        ],
+        "build_config": {
+          "build_command": "npx @opennextjs/cloudflare build",
+          "destination_dir": ".open-next/assets",
+          "build_caching": null,
+          "root_dir": "",
+          "web_analytics_tag": null,
+          "web_analytics_token": null
+        },
+        "source": {
+          "type": "github",
+          "config": {
+            "owner": "NilsonBrites-QA",
+            "repo_name": "agenciajn",
+            "production_branch": "main",
+            "pr_comments_enabled": false
+          }
+        },
+        "env_vars": {
+          "ADMIN_EMAIL": {
+            "type": "plain_text",
+            "value": "nilson.brites@gmail.com"
+          },
+          "ADMIN_PASSWORD": {
+            "type": "plain_text",
+            "value": "AgJN@9F9627D1!26"
+          },
+          "CF_PAGES": {
+            "type": "plain_text",
+            "value": "1"
+          },
+          "JWT_SECRET": {
+            "type": "plain_text",
+            "value": "ede6546beac46f31177c5327bce237d6b0b67da8cbef73e04379a07b6ba089c0"
+          },
+          "NEXT_PUBLIC_TURNSTILE_SITE_KEY\t": {
+            "type": "plain_text",
+            "value": "0x4AAAAAADBxv7aUIVZAHQjo"
+          },
+          "RESEND_API_KEY": {
+            "type": "plain_text",
+            "value": "re_NPWod8sQ_84xVc2qrVTwJBEuT4CETqE2z"
+          },
+          "TURNSTILE_SECRET_KEY\t": {
+            "type": "plain_text",
+            "value": "0x4AAAAAADBxv10PEx3-FyGen6soTc-qpXs"
+          }
+        },
+        "compatibility_date": "2026-04-23",
+        "compatibility_flags": [],
+        "build_image_major_version": 3,
+        "usage_model": null,
+        "aliases": [
+          "https://www.agenciajn.com.br"
+        ],
+        "is_skipped": false,
+        "production_branch": "main",
+        "uses_functions": false
+      },
+      "created_on": "2026-04-23T11:14:11.690112Z",
+      "production_branch": "main",
+      "production_script_name": "pages-worker--13004224-production",
+      "preview_script_name": "pages-worker--13004224-preview",
+      "uses_functions": false,
+      "framework": "next",
+      "framework_version": "16.2.4"
+    }
+  ],
+  "success": true,
+  "errors": [],
+  "messages": [],
+  "result_info": {
+    "page": 1,
+    "per_page": 10,
+    "count": 1,
+    "total_count": 1,
+    "total_pages": 1
+  }
+}
