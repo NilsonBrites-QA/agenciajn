@@ -7,6 +7,11 @@ compatibility_flags = ["nodejs_compat", "global_fetch_strictly_public"]
 directory = ".open-next/assets"
 binding = "ASSETS"
 
+routes = [
+  { pattern = "agenciajn.com.br/*", zone_id = "2a84e0977af17edebb7703625a956920" },
+  { pattern = "www.agenciajn.com.br/*", zone_id = "2a84e0977af17edebb7703625a956920" }
+]
+
 [[services]]
 binding = "WORKER_SELF_REFERENCE"
 service = "agenciajn"
