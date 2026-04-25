@@ -23,8 +23,6 @@ const config: OpenNextConfig = {
 			queue: "direct",
 		},
 	},
-	buildDir: ".open-next",
-	generatedFilesDir: ".open-next",
 };
 
 export default config;
